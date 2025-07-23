@@ -2,43 +2,62 @@
 Adapted from carykh by me
 
 To run this program, you have two options:
-    1. Store it in your user file
-        Although it does make running the simulator easier as you have to type less in the command prompt to open it up, you have to store it in your user file and if you run many things from there, it can get really messy. This method is not recommended, I only used it because I frequently needed to run the code again and again to test things. Now that I've finished though, I've switched to the 2nd method now.
 
-        Step 1:
-            Look at the default line when you open Terminal or Command Prompt. It should look something like C:\Users\ and then whatever your username is for the computer.
-        Step 2: 
-            Locate the place where it says in your File Explorer. On Windows, it should be under This PC > C: > your username.
-        Step 3:
-            Download and save this source code into that location.
-        Running the Simulator:
-            Every time you want to run the sim, open Terminal or Command Prompt. Type in:
-                ```
-                python jes.py
-                ```
-            and hit enter. It should load now!
-    
-    2. Store in a seperate file, wherever you want
-        This method requires you to type in two lines of code when opening the sim. However, it is neater to save all the .py files (as well as the the .png and .md) in one folder.
+Method 1: Store it in your user file
 
-        Step 1:
-            Download and save this source code wherever you want. Take note of the location of the folder the scripts are in. It should look something like C:\Users\username\mystuff\jes.
-        Running the Simulator:
-            Everytime you want to run the sim, open Terminal or Command Prompt. Type in:
-                ```
-                cd C:\ wherever you saved the scripts
-                ```
-            Note the space in between cd and wherever you saved the scripts.
+Although it does make running the simulator easier as you have to type less in the command prompt to open it up, you have to store it in your user file and if you run many things from there, it can get really messy. This method is not recommended, I only used it because I frequently needed to run the code again and again to test things. Now that I've finished though, I've switched to the 2nd method now.
 
-            After hitting enter, a new line should show up with the location you inputted in the first line. In this new line, type:
-                ```
-                python jes.py
-                ```
-            and hit enter. It loads! Hooray!
+Step 1:
+
+Look at the default line when you open Terminal or Command Prompt. It should look something like C:\Users\ and then whatever your username is for the computer.
+        
+Step 2: 
+
+Locate the place where it says in your File Explorer. On Windows, it should be under This PC > C: > your username.
+
+Step 3:
+
+Download and save this source code into that location.
+
+Running the Simulator:
+
+Every time you want to run the sim, open Terminal or Command Prompt. Type in:
+
+```
+python jes.py
+```
+and hit enter. It should load now!
+
+Method 2: Store in a seperate file, wherever you want
+
+This method requires you to type in two lines of code when opening the sim. However, it is neater to save all the .py files (as well as the the .png and .md) in one folder.
+
+Step 1:
+
+Download and save this source code wherever you want. Take note of the location of the folder the scripts are in. It should look something like C:\Users\username\mystuff\jes.
+
+Running the Simulator:
+
+Everytime you want to run the sim, open Terminal or Command Prompt. Type in:
+
+```
+cd C:\ wherever you saved the scripts
+```
+
+Note the space in between cd and wherever you saved the scripts.
+
+After hitting enter, a new line should show up with the location you inputted in the first line. In this new line, type:
+
+```
+python jes.py
+```
+
+and hit enter. It loads! Hooray!
 
 Note that this works in Windows Powershell as well as Terminal and Command Prompt.
 
 It should look something like this:
+
 ```
 -------------------------------------------------[-][=][X]
 Microsoft Windows [Version 10.0.12345.6789]
@@ -83,7 +102,7 @@ ENTER: Do a generation
 
 \ (BACKSLASH): Turn on Automatic Generation
 
-ESC and DELETE (at the same time): Close the program. This is to make sure you don't accidentally close your program because the two keys are on opposite sides of the keyboard!
+ESC and DELETE (at the same time): Close the program. This for easy accessibility but also to make sure you don't accidentally close your program and abort all your progress because the two keys are on opposite sides of the keyboard!
 
 # Updates (2025-01-11) (By Cary)
 
@@ -102,7 +121,7 @@ There used to be a bug where, late in the simulation, big mutations would take f
 - Resized the window and all the UI to fit smaller screens
     - The creature mosaic now is a 17 by 15 square to fit smaller squares. The species lightboard in the advanced species info is also now a 17 by 15 square, but now with the multiples of 17 listed along the right hand side so it's easier to see what place each species got.
 
-- Added extra key controls for accessibility (W, E, R, Autogen, and quit (for some reason Cary's quit function didn't work))
+- Added extra key controls for accessibility (W, E, R, Autogen, and quit (even though Cary's CTRL+C in the Command Prompt existed, I just added this because I liked it))
     - Edited key controls (X -> D and C -> F). The reason I did this is because the left hand four fingers can rest on Q, W, E and R, and the index can easily reach T, D and F from it's "resting position", R.
     - Couldn't find a way to make a shortcut for the watch sample button. Sorry for anyone that uses it! I gave up after half an hour of searching because I don't really use it anyway, but if you do find a way, good job!
 
