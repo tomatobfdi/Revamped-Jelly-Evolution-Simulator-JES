@@ -406,56 +406,76 @@ class UI:
                 new_gen = None
                 if event.key == pygame.K_LEFT:
                     new_gen = max(0,self.genSlider.val-1)
+                if event.key == pygame.K_a:
+                    new_gen = max(0,self.genSlider.val-1)
+                
                 if event.key == pygame.K_RIGHT:
                     new_gen = min(self.genSlider.val_max,self.genSlider.val+1)
+                if event.key == pygame.K_d:
+                    new_gen = min(self.genSlider.val_max,self.genSlider.val+1)
+
                 if new_gen is not None:
                     self.genSlider.manualUpdate(new_gen)
                     self.clearMovies()
                     self.detectMouseMotion()
-                if event.key == pygame.K_d: # pressing D will hide the Xs showing killed creatures
+                
+                if event.key == pygame.K_f: # pressing F will hide the Xs showing killed creatures
                     self.showXs = (not self.showXs)
                     self.drawCreatureMosaic(self.genSlider.val)
-                elif event.key == pygame.K_r: # pressing R will store the species of the creature you're rolling over into "storage".
+                
+                elif event.key == pygame.K_s: # pressing S will store the species of the creature you're rolling over into "storage".
                     self.species_storage = self.getHighlightedSpecies()
-                elif event.key == pygame.K_f: # pressing F will change the highlighted species's color.
+                
+                elif event.key == pygame.K_g: # pressing G will change the highlighted species's color.
                     c = self.getHighlightedSpecies()
                     if c is not None:
                         self.sc_colors[c] = str(random.uniform(0,1))
                         drawAllGraphs(self.sim, self)
                         self.clearMovies()
                         self.detectMouseMotion()
+                
                 elif event.key == 13: # pressing Enter
                     self.sim.doGeneration(None)
+                elif event.key == pygame.K_r:
+                    self.sim.doGeneration(None)
+                
                 elif event.key == pygame.K_q: # pressing 'Q'
                     self.showCreaturesButton.timeOfLastClick = time.time()
                     self.showCreaturesButton.setting = 1-self.showCreaturesButton.setting
                     self.toggleCreatures(self.showCreaturesButton)
+                
                 elif event.key == pygame.K_w:
                     if self.sortButton.setting == 2:
                         self.sortButton.setting = 0
                     else:
                         self.sortButton.setting = self.sortButton.setting + 1
                     self.drawCreatureMosaic(self.genSlider.val)
+                
                 elif event.key == pygame.K_e:
                     if self.styleButton.setting == 1:
                         self.styleButton.setting = 0
                     else:
                         self.styleButton.setting = 1
                     self.drawCreatureMosaic(self.genSlider.val)
+                
                 elif event.key == pygame.K_BACKSLASH:
                     if self.ALAPButton.setting == 0:
                         self.ALAPButton.setting = 1
                     else:
                         self.ALAPButton.setting = 0
                     Sim.checkALAP
+                elif event.key == pygame.K_t:
+                    if self.ALAPButton.setting == 0:
+                        self.ALAPButton.setting = 1
+                    else:
+                        self.ALAPButton.setting = 0
+                    Sim.checkALAP
+                
                 elif event.key == pygame.K_ESCAPE:
                     keys = pygame.key.get_pressed()
                     if keys[pygame.K_ESCAPE] and keys[pygame.K_DELETE]:
                         pygame.quit()
                 
-                    
-                        
-        
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mouseX, mouseY = pygame.mouse.get_pos()
                 for slider in self.sliderList:
