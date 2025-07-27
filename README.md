@@ -90,17 +90,17 @@ W: Toggle how the jelly mosaic is sorted (By ID, Fitness or Weakness)
 
 E: Toggle how the jelly mosaic looks (By Jelly Icons or Species Tiles)
 
-R: Store the species you're highlighting in memory. (Press R a 2nd time to unstore.) Why do this? Well, say you notice there's a jelly who got #1 in a certain generation, but you can't find any trace of it elsewhere. Now, you can highlight the jelly, press R, and their species bubble will show up in the upper-left. Then, roll your mouse over the species bubble, and there's all the species info!
+S: Store the species you're highlighting in memory. (Press R a 2nd time to unstore.) Why do this? Well, say you notice there's a jelly who got #1 in a certain generation, but you can't find any trace of it elsewhere. Now, you can highlight the jelly, press R, and their species bubble will show up in the upper-left. Then, roll your mouse over the species bubble, and there's all the species info!
 
-D: Toggle whether or not X's show up over killed jellies
+F: Toggle whether or not X's show up over killed jellies
 
-F: Change the color of the species you're highlighting. Do this when 2 species are annoyingly close in color, and you want a better way to tell them apart.
+G: Change the color of the species you're highlighting. Do this when 2 species are annoyingly close in color, and you want a better way to tell them apart.
 
-LEFT/RIGHT: Scroll through forward/backward through the timeline (can also be done by scrolling the scroll bar)
+A/D or LEFT/RIGHT: Scroll through forward/backward through the timeline (can also be done by scrolling the scroll bar)
 
-ENTER: Do a generation
+R or ENTER: Do a generation
 
-\ (BACKSLASH): Turn on Automatic Generation
+T or \ (BACKSLASH): Turn on Automatic Generation
 
 ESC and DELETE (at the same time): Close the program. This for easy accessibility but also to make sure you don't accidentally close your program and abort all your progress because the two keys are on opposite sides of the keyboard!
 
@@ -122,7 +122,7 @@ There used to be a bug where, late in the simulation, big mutations would take f
     - The creature mosaic now is a 17 by 15 square to fit smaller squares. The species lightboard in the advanced species info is also now a 17 by 15 square, but now with the multiples of 17 listed along the right hand side so it's easier to see what place each species got.
 
 - Added extra key controls for accessibility (W, E, R, Autogen, and quit (even though Cary's CTRL+C in the Command Prompt existed, I just added this because I liked it))
-    - Edited key controls (X -> D and C -> F). The reason I did this is because the left hand four fingers can rest on Q, W, E and R, and the index can easily reach T, D and F from it's "resting position", R.
+    - Edited key controls (X -> D and C -> F). The reason I did this is because the left hand four fingers can rest on Q, W, E and R, and they can move down to A, S, D, F and G.
     - Couldn't find a way to make a shortcut for the watch sample button. Sorry for anyone that uses it! I gave up after half an hour of searching because I don't really use it anyway, but if you do find a way, good job!
 
 - Renamed Show Creatures, Small icons, and Turn on ALAP to Show Jellies, Jelly Icons and Turn on Autogen repectively. This is because I thought jellies just sounded better, and Autogen because ALAP doesn't sound that good.
