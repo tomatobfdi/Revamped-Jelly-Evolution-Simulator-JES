@@ -1,5 +1,5 @@
 import these two python modules using -pip
-make sure the version is up
+make sure the version is up to:
 
 numpy~=2.2.1
 pygame~=2.6.1
